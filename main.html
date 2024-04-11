@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeKZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="./css/MainStyle.css">
+    <link rel="stylesheet" href="./css/LinerStyle.css">
+    <link rel="stylesheet" href="./css/NewsStyle.css">
+    <link rel="stylesheet" href="./css/RightNavBarStyle.css">
+    <link rel="stylesheet" href="./css/StyleBlago.css">
+    <link rel="stylesheet" href="./css/App.css">
+</head>
+<body>
+    <header id="Home_nav">
+        <nav class="main_nav_header">
+            <div class="Logo_Name_Header">
+                <img src="./image/logo.png" alt="SafeKZ" class="image_Logo">
+                <h2>SafeKZ</h2>
+            </div>
+            <div class="Navigation_Header">
+                <nav class="Navigation_Header_Nav_1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#News_nav">Emergency</a></li>
+                    <li><a href="#Community_nav">Community</a></li>
+                    <li><a href="#map_nav">Map</a></li>
+                    <li><a href="#">Application</a></li>
+                </nav>
+                <nav class="Navigation_Header_Nav_2">
+                    <button>
+                        <h2>Download</h2>
+                    </button>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <div class="menu">
+        <img src="./SvgImage/ArrowRight.svg" class="Arrow_Img_Menu">
+        <div class="title">
+            <h1>ИНСТРУКЦИЯ</h1>
+        </div>
+        <div class="list_menu">
+          <ul>
+            <li><a href="./instruction.html" target="_blank">НАВОДНЕНИЕ</a></li>
+            <li><a href="./instruction.html" target="_blank">ЗЕМЛЕТРЯСЕНИЕ</a></li>
+            <li><a href="./instruction.html" target="_blank">ПОЖАРЫ</a></li>
+            <li><a href="./instruction.html" target="_blank">ШТОРМ</a></li>
+            <li><a href="./instruction.html" target="_blank">ОПОЛЗНИ</a></li>
+            <li><a href="./instruction.html" target="_blank">ОПОЛЗНИ СНЕГА</a></li>
+            </ul>
+        </div>
+        <div class="footer_menu">
+            <h1>ЭКСТРЕННЫЕ КОНТАКТЫ:</h1>
+            <p>102.Полиция</p>  
+            <p>101.Пожарная</p>
+            <p>103.Скорая медицинская помощь</p>
+            <p>110.Антитеррористическая служба</p>
+            <p>112.Департамент по чрезвычайным ситуациям</p>
+        </div>
+    </div>
+    <div class="content">
+    </div>
+    <section class="main_section">
+        <img src="./image/ImageMain.jpg" alt="backgroundImage" class="backgroundImage">
+        <div class="left_information">
+            <div class="left_information_of">
+                <h3><span>SafeKZ</span> - это инновационная мобильная и веб-платформа, разработанная с целью оперативного оповещения населения Казахстана о чрезвычайных ситуациях, таких как природные катастрофы, террористические акты, аварии и другие угрозы безопасности. Приложение доступно для скачивания на смартфоны и работает на всех популярных операционных системах.</h3>
+                <div class="left_information_h2">
+                    <h2>Наши преимущества:</h2>
+                    <h3><span>Быстрое оповещение:</span> Программа "SafeKZ" обеспечивает мгновенное оповещение о любой чрезвычайной ситуации через мобильное приложение и веб-платформу. Это позволяет гражданам получать актуальную информацию в реальном времени и принимать необходимые меры без задержек.</h3>
+                    <h3><span>Персонализированные уведомления:</span> Пользователи могут настроить приложение так, чтобы получать уведомления только о тех чрезвычайных ситуациях, которые являются релевантными для их местоположения или интересов. Это повышает эффективность оповещений и уменьшает вероятность ложных тревог.</h3>
+                    <h3><span>Система обратной связи:</span> Пользователи могут также предоставлять обратную связь о качестве оповещений и предложения по улучшению программы "SafeKZ". Это позволяет разработчикам постоянно улучшать функционал приложения и обеспечивать более эффективное взаимодействие с населением.</h3>
+                </div>
+                <div class="left_social_networks">
+                    <a href="#"><img src="./SvgImage/WhatsApp.svg" alt="WhatsApp" class="social_image_whatsapp"></a>
+                    <a href="#"><img src="./SvgImage/Facebook.svg" alt="Facebook" class="social_image_facebook"></a>
+                    <a href="#"><img src="./SvgImage/Telegram.svg" alt="Telegram" class="social_image_telegram"></a>
+                    <a href="#"><img src="./SvgImage/Instagram.svg" alt="Instagram" class="social_image_instagram"></a>
+                    <a href="#">SafeKZ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+        <h1>Информация о природных катаклизмах в Казахстане</h1>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Lavina.png" alt="">
+                    <div>
+                        <h2>Лавина</h2>
+                        <h4>Лави́на — значительный объём снежной массы, падающей или соскальзывающей с крутых горных склонов со скоростью около 20—30 м/с.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Eathkuake.png" alt="">
+                    <div>
+                        <h2>Землетресение</h2>
+                        <h4>Землетрясе́ние — подземные толчки и колебания земной поверхности, сдвиг тектонических плит. Согласно современным взглядам, землетрясения отражают процесс геологического преобразования планеты.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Fire.png" alt="">
+                    <div>
+                        <h2>Пожар</h2>
+                        <h4>Пожа́р — неконтролируемое горение, причиняющее материальный ущерб, вред жизни и здоровью граждан, интересам общества и государства.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Navodnenye.png" alt="">
+                    <div>
+                        <h2>Наводнение</h2>
+                        <h4>Наводне́ние — значительное затопление определённой территории в результате подъёма уровня воды в реке, озере, водохранилище, наносящее материальный ущерб экономике, социальной сфере и природной среде.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Opolzen.png" alt="">
+                    <div>
+                        <h2>О́ползень</h2>
+                        <h4>О́ползень — опасное природное явление, смещение масс горных пород по склону под воздействием собственного веса и дополнительной нагрузки вследствие подмыва склона, переувлажнения, сейсмических толчков и иных процессов.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="./image/imageInfo/Burya.png" alt="">
+                    <div>
+                        <h2>Буря</h2>
+                        <h4>Бу́ря — собирательное понятие, обозначающее очень сильный ветер (а также сильное волнение на море), возникающий по различным причинам и в разных областях Земли.</h4>
+                        <a href="#">подробнее...</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="work4" id="News_nav">
+        <h1>Последние новости</h1>
+        <div class="bigwork">
+            <div class="minwork">
+                <img src="./image/news1.jpg" alt="" style="width: 300px; height: 180px"/>
+                <div class="minwork01">
+                    <h3>Землетрясение</h3>
+                    <p>В Алматы произошло землетрясение магнитудой 5,5.</p>
+                    <div class="minwork02">
+                        <p>Сегодня 5:02</p>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D0%B5%D1%82%D1%80%D1%8F%D1%81%D0%B5%D0%BD%D0%B8%D0%B5">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="minwork">
+                <img src="./image/news2.jpg" alt="" style="width: 300px; height: 180px"/>
+                <div class="minwork01">
+                    <h3>Наводнение</h3>
+                    <p>Масштабное потепление из-за дождей в Казахстане</p>
+                    <div class="minwork02">
+                        <p>Вчера 12:22</p>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D0%B5%D1%82%D1%80%D1%8F%D1%81%D0%B5%D0%BD%D0%B8%D0%B5">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="minwork">
+                <img src="./image/news3.jpg" alt="" style="width: 300px; height: 180px"/> 
+                <div class="minwork01">
+                    <h3>Пожары</h3>
+                    <p>В Казахстане произошел пожар в Абайском районе</p>
+                    <div class="minwork02">
+                        <p>Вчера 17:42</p>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D0%B5%D1%82%D1%80%D1%8F%D1%81%D0%B5%D0%BD%D0%B8%D0%B5">подробнее</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="minwork expandable">
+                <img src="./image/news4.jpg" alt="" style="width: 300px; height: 180px"/>
+                <div class="minwork01">
+                    <h3>Оползни</h3>
+                    <p>Оползень обрушился на жилой дом в Медеуском районе Алматы</p>
+                    <div class="minwork02">
+                        <p>Вчера 22:22</p>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D0%B5%D1%82%D1%80%D1%8F%D1%81%D0%B5%D0%BD%D0%B8%D0%B5">подробнее</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="minwork expandable">
+                <img src="./image/news5.jpg" alt="" style="width: 300px; height: 180px"/>
+                <div class="minwork01">
+                    <h3>Ураган</h3>
+                    <p>Мощный ураган обрушился на Алматы, повредив 13 автомобилей</p>
+                    <div class="minwork02">
+                        <p>Сегодня 8:22</p>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D0%B5%D1%82%D1%80%D1%8F%D1%81%D0%B5%D0%BD%D0%B8%D0%B5">подробнее</a>
+                    </div>
+                </div>
+            </div>  
+          </div>
+          <a href="#char" class="cnok more-btn expand-btn">Больше</a>
+        </div>
+    </section>
+    <div class="h1_div_map">
+        <h1 style="margin-left: 470px;">карта наводнений в Казахстане</h1>
+    </div>
+    <section class="map" id="map_nav">
+        <div id="map" style="width: 900px; height: 800px; margin-left: 300px; z-index: 1; border-radius: 15px; border: 10px #950101 solid; margin-bottom: 50px; margin-top: 50px;"></div>
+    </section>    
+    <section class="Instruction">
+        <h1 class="toph1">Инструкции и контакты в Время чрезвычайной ситуации</h1>
+        <div class="text">
+          <p>
+            слева есть инструкция а также контакты которым нужно позвонить в время
+            чрезвычайной ситуации
+          </p>
+          <p>
+            а также вы можете перейти по ссылке если вы не нашли вкладку с
+            инструкцией
+          </p>
+        </div>
+        <h1 class="button_h1">
+          ПОЖАЛУЙСТА ОЗНАКОМТЕСЬ С НЕЙ - ОНА МОЖЕТ СПАСТИ ВАС!
+        </h1>
+        <img src="./image/Arrow.png" alt="Arrow" />
+        <a href="./instruction.html" class="button_a">ИНСТРУКЦИЯ И КОНТАКТЫ</a>
+    </section>
+    <section class="advantages">
+        <div class="work6_big">
+          <h1>преимущества приложения</h1>
+          <p>
+            SafeKZ - ваш надежный спутник в мире природных катаклизмов! Вот
+            некоторые из его ключевых преимуществ
+          </p>
+        </div>
+        <div class="advantages_big">
+          <div class="advantages_yes">
+            <img
+              src="./SvgImage/message.svg"
+              style="width: 150px; height: 150px"
+            />
+            <h1>Быстрые оповещенияs</h1>
+            <p>
+              SafeKZ обеспечивает моментальные уведомления о приближающихся
+              природных катастрофах, таких как землетрясения, наводнения, лесные
+              пожары и другие опасности.
+            </p>
+          </div>
+          <div class="advantages_yes">
+            <img
+              src="./SvgImage/setting.svg"
+              style="width: 150px; height: 150px"
+            />
+            <h1>Пользовательские настройки</h1>
+            <p>
+              Пользователи могут настроить приложение в соответствии с их
+              предпочтениями и местоположением, чтобы получать информацию о
+              катастрофах, которые могут затронуть их регион.
+            </p>
+          </div>
+          <div class="advantages_yes">
+            <img
+              src="./SvgImage/language.svg"
+              style="width: 150px; height: 150px"
+            />
+            <h1>Многоязычность</h1>
+            <p>
+              SafeKZ поддерживает несколько языков, что делает его доступным для
+              широкого круга пользователей в разных странах и регионах.
+            </p>
+          </div>
+        </div>
+      </section>
+    <section class="Section_Blago" id="Community_nav">
+        <div class="Blago_div_1">
+            <div class="Blago_div_1_1">
+                <img src="./image/Blago.png" class="Blago_div_1_image">
+                <div class="a2">
+                    <h1>БЛАГОТВОРИТЕЛЬНОСТЬ</h1>
+                    <h2>ПОМОГИ ЛЮДЯМ КОТОРЫЕ ПОПАЛИ В БЕДУ</h2>
+                </div>
+            </div>
+            <div class="b1">
+                <div class="b1_2">
+                    <h4>ТЕКУЩИЙ ФОНД</h4>
+                    <h1>14,2 МЛРД.ТЕНГЕ</h1>
+                    <h4>МИССИЯ</h4>     
+                </div>
+                <div class="b2">
+                    <p>
+                        в мгновение ока жизнь может первернуться с ног на голову. Для многих семей по всему 
+                        миру природные катаклизмы становятся причиной утраты дома, близких и всего, что им дорого.
+                        В такие моменты поддержка становится невероятно важной. Наша благотворительная организация 
+                        возникла именно для того,чтобы протянуть руку помощи тем, кто оказался в такой непростой ситуаций.
+                    </p> 
+                    <button class="s">
+                        <h2>поддержка</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footerbig">
+        <div class="big">
+          <div class="min1">
+            <div class="minlogo">
+                <div class="flex">
+                    <img src="./image/logo.png" style="width: 40px; height: 40px"/>
+                    <h1>SafeKZ</h1>
+                </div>
+                <button>
+                    <h1>Download</h1>
+                </button>
+            </div>
+  
+            <div class="mintext">
+              <a href="#Home_nav">Home</a>
+              <a href="#News_nav">Emergency</a>
+              <a href="#Community_nav">Community</a>
+              <a href="#map_nav">Map</a>
+              <a href="#">Application</a>
+            </div>
+            <div class="min2">
+              <p>2024</p>
+              <a href="#">политика конфиденциальности</a>
+              <a href="#">благотворительный фонд</a>
+              <a href="#" class="a1">техподдержка</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="big2">
+          <div class="ikon">
+            <a href="#"><img src="./SvgImage/WhatsApp.svg" alt="" /></a>
+            <a href="#"><img src="./SvgImage/Instagram.svg" alt="" /></a>
+            <a href="#"><img src="./SvgImage/Telegram.svg" alt="" /></a>
+            <a href="#"><img src="./SvgImage/Facebook.svg" alt="" /></a>
+            <p>SafeKZ</p>
+          </div>
+        </div>
+    </footer>
+    <script src="./JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="./JavaScript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./JavaScript/Liner.js"></script>        
+    <script src="./JavaScript/map.js"></script>
+</body>
+</html>
